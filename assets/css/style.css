@@ -21328,6 +21328,11 @@ body.page-scrolled .header-fixed {
 .navbar .navbar-brand img {
   height: 3.5rem;
 }
+
+.footer-brand img {
+  height: 4rem;
+}
+
 .navbar .navbar-nav {
   margin-top: 1.125rem;
 }
