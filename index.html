@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body data-spy="scroll" data-target="#header-navbar" data-offset="140">
+    <!-- Submission Confirmation script -->
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hiddenConfirm"
+      id="hiddenConfirm"
+      style="display: none"
+      onload="if(submitted){window.location='inquiry-submitted.html';}"
+    ></iframe>
+    <!-- Submission Confirmation script -->
     <div id="page-start-anchor"></div>
 
     <!-- header start -->
@@ -233,7 +244,7 @@
                       data-toggle="smooth-scroll"
                       href="#contacts"
                     >
-                      Contacts Us
+                      Contact Us
                     </a>
                   </li>
                 </ul>
@@ -1910,6 +1921,8 @@
             <div class="col-lg-8 offset-lg-2">
               <form
                 action="https://docs.google.com/forms/d/e/1FAIpQLScHxPh5L41fF9CrgemfRmwYIDBKiYDtTo4Pi5Pt_2sM-Bf6tg/formResponse"
+                target="hiddenConfirm"
+                onsubmit="submitted=true"
                 class="row mt-17"
               >
                 <div class="col-12 col-sm-6">
